@@ -6,7 +6,8 @@
     BindingContext="{Binding Main,Source={StaticResource Locator}}"
     Title="Lands">
     <ContentPage.Content>
-        <ScrollView>
+        <ScrollView
+            BindingContext="{Binding Login}">
             <StackLayout
                 Padding="5">
                 <Image Source="emblem_un"
@@ -27,7 +28,8 @@
                         Grid.Row="0"
                         Grid.Column="1"
                         Keyboard="Email"
-                        Placeholder="Enter your email..."/>
+                        Placeholder="Enter your email..."
+                        Text="{Binding Email, Mode=TwoWay}"/>
                     <Label 
                         Grid.Row="1"
                         Grid.Column="0"
@@ -37,9 +39,11 @@
                         Grid.Row="1"
                         Grid.Column="1"
                         IsPassword="True"
-                        Placeholder="Enter your password..."/>
+                        Placeholder="Enter your password..."
+                        Text="{Binding Password, Mode=TwoWay}"/>
                 </Grid>
                 <ActivityIndicator
+                    IsRunning="{Binding isRunning, Mode=TwoWay}"
                     VerticalOptions="CenterAndExpand"/>
                 <StackLayout
                     Margin="10,0"
@@ -50,6 +54,7 @@
                         Text="Rememberme on this device"
                         VerticalOptions="Center"/>
                     <Switch
+                        IsToggled="{Binding isRemembered, Mode=TwoWay}"
                         HorizontalOptions="End"/>
                 </StackLayout>
                 <Label
@@ -64,6 +69,7 @@
                     VerticalOptions="CenterAndExpand">
                     <Button
                         BackgroundColor="Navy"
+                        Command="{Binding LoginCommand}"
                         CornerRadius="23"
                         HeightRequest="46"
                         HorizontalOptions="FillAndExpand"
