@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Lands.Views.LoginPage"
     BindingContext="{Binding Main,Source={StaticResource Locator}}"
-    Title="Lands">
+    Title="Login">
     <ContentPage.Content>
         <ScrollView
             BindingContext="{Binding Login}">
@@ -43,7 +43,7 @@
                         Text="{Binding Password, Mode=TwoWay}"/>
                 </Grid>
                 <ActivityIndicator
-                    IsRunning="{Binding isRunning, Mode=TwoWay}"
+                    IsRunning="{Binding IsRunning, Mode=TwoWay}"
                     VerticalOptions="CenterAndExpand"/>
                 <StackLayout
                     Margin="10,0"
@@ -54,7 +54,7 @@
                         Text="Rememberme on this device"
                         VerticalOptions="Center"/>
                     <Switch
-                        IsToggled="{Binding isRemembered, Mode=TwoWay}"
+                        IsToggled="{Binding IsRemembered, Mode=TwoWay}"
                         HorizontalOptions="End"/>
                 </StackLayout>
                 <Label
@@ -73,6 +73,7 @@
                         CornerRadius="23"
                         HeightRequest="46"
                         HorizontalOptions="FillAndExpand"
+                        IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                         Text="Login"
                         TextColor="White"/>
                     <Button
@@ -80,6 +81,7 @@
                         CornerRadius="23"
                         HeightRequest="46"
                         HorizontalOptions="FillAndExpand"
+                        IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                         Text="Register"
                         TextColor="White"/>
                 </StackLayout>
