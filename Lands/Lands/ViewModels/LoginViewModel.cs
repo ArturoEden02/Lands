@@ -3,6 +3,7 @@
     using System;
     using System.Windows.Input;
     using GalaSoft.MvvmLight.Command;
+    using Xamarin.Forms;
 
     public class LoginViewModel
     {
@@ -29,9 +30,24 @@
             }
         }
 
-        private void Login()
+        private async void Login()
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(this.Email))
+            {
+                await Application.Current.MainPage.DisplayAlert(
+                    "Error",
+                    "Your must enter an email.",
+                    "Accept");
+                return;
+            }
+            if (string.IsNullOrEmpty(this.Password))
+            {
+                await Application.Current.MainPage.DisplayAlert(
+                    "Error",
+                    "Your must enter a password.",
+                    "Accept");
+                return;
+            }
         }
         #endregion
     }
