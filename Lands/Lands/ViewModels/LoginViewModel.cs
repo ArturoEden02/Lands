@@ -1,7 +1,5 @@
 ﻿namespace Lands.ViewModels
 {
-    using System;
-    using System.ComponentModel;
     using System.Windows.Input;
     using GalaSoft.MvvmLight.Command;
     using Lands.Views;
