@@ -81,4 +81,3 @@
         public bool Independent { get; set; }
     }
 }
-

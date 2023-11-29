@@ -145,5 +145,10 @@
     <BundleResource Include="Resources\instagram_logo.png" />
     <BundleResource Include="Resources\facebook_logo.png" />
     <BundleResource Include="Resources\ic_chevron_right.png" />
+    <BundleResource Include="Resources\ic_info_outline.png" />
+    <BundleResource Include="Resources\ic_language.png" />
+    <BundleResource Include="Resources\ic_monetization_on.png" />
+    <BundleResource Include="Resources\ic_people.png" />
+    <BundleResource Include="Resources\ic_translate.png" />
   </ItemGroup>
 </Project>
