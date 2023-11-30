@@ -5,37 +5,34 @@
     public class Translations
     {
         [JsonProperty(PropertyName = "br")]
-        public string Br { get; set; }
+        public string Brazilian { get; set; }
 
         [JsonProperty(PropertyName = "pt")]
-        public string Pt { get; set; }
+        public string Portuges { get; set; }
 
         [JsonProperty(PropertyName = "nl")]
-        public string Nl { get; set; }
+        public string Dutch { get; set; }
 
         [JsonProperty(PropertyName = "hr")]
-        public string Hr { get; set; }
+        public string Croatian { get; set; }
 
         [JsonProperty(PropertyName = "fa")]
-        public string Fa { get; set; }
+        public string Persian { get; set; }
 
         [JsonProperty(PropertyName = "de")]
-        public string De { get; set; }
+        public string Germany { get; set; }
 
         [JsonProperty(PropertyName = "es")]
-        public string Es { get; set; }
+        public string Spanish { get; set; }
 
         [JsonProperty(PropertyName = "fr")]
-        public string Fr { get; set; }
+        public string French { get; set; }
 
         [JsonProperty(PropertyName = "ja")]
-        public string Ja { get; set; }
+        public string Japanese { get; set; }
 
         [JsonProperty(PropertyName = "it")]
-        public string It { get; set; }
-
-        [JsonProperty(PropertyName = "hu")]
-        public string Hu { get; set; }
+        public string Italian { get; set; }
     }
 }
 

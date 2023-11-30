@@ -7,7 +7,6 @@
     {
         #region ViewModels
 
-        public CurrenciesViewModel Currencies { get; set; }
         public LandViewModel Land { get; set; }
         public LandsViewModel Lands { get; set; }
         public LoginViewModel Login { get; set; }
