@@ -1,7 +1,7 @@
-﻿namespace Lands.Domain;
-
-public class Class1
+﻿namespace Lands.Domain
 {
+    public class Class1
+    {
 
+    }
 }
-
